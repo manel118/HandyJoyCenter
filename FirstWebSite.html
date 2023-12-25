@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./css/all.css">
+    <meta name="viewport" content="width=device-widthe, initial-scale=1">
+
+    <style>
+        body {
+            margin: 0px;
+            font-family: cursive;
+
+        }
+
+        /*--------------------------------------------------------- HEADER --------------------------------------------------------------*/
+        .nav {
+            list-style-type: none;
+            float: right;
+            margin-top: 25px;
+
+        }
+
+        .nav li {
+            display: inline-block;
+            margin-right: 40px;
+            font: normal 18px Agubalamo;
+            position: relative;
+        }
+
+        .nav li::after {
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            border-radius: 2px;
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            background-color: rgb(255, 255, 255);
+            opacity: 0;
+            transition: 0.5s;
+
+        }
+
+        .nav li:hover::after {
+            width: 100%;
+            opacity: 1;
+        }
+
+        .nav li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        .nav li a:active {
+            color: bisque;
+        }
+
+        .logo {
+            float: left;
+            margin: 8px 100px;
+            overflow: auto;
+        }
+
+        .logo:hover {
+            cursor: pointer;
+        }
+
+        .logo-name {
+            float: left;
+            font-size: 20px;
+            font-family: cursive;
+            display: inline-block;
+            color: white;
+            line-height: 65px;
+            margin-left: 2px;
+        }
+
+        .logo-Img {
+            height: 60px;
+            float: left;
+        }
+
+        .header {
+            width: 100%;
+            background-color: rgba(91, 21, 60, 0.8);
+            overflow: auto;
+            position: fixed;
+            top: 0;
+            z-index: 30;
+        }
+
+        /*-------------------------------------------------------- section 1--------------------------------------------*/
+
+        .parent-section1 {
+            height: 100vh;
+            width: 100%;
+            background-image: url("./images/crochet website/pexels-biferyal-7649714.jpg");
+            position: relative;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .overley-section1 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(41, 20, 84, 0.5);
+
+            ;
+        }
+
+        .container-section1 {
+            height: 210px;
+            width: 70%;
+            position: absolute;
+            padding: 15px;
+            top: 50%;
+            bottom: 50%;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .container-section1 p {
+
+            line-height: 50px;
+            color: white;
+
+        }
+
+        .container-section1 p .title {
+            font-size: 50px;
+            text-transform: uppercase;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .container-section1 p .phar {
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+
+        .container-section1 .btn1,
+        .btn2 {
+
+            padding: 10px 20px;
+            font-size: 20px;
+            text-transform: capitalize;
+            cursor: pointer;
+            border-radius: 10px;
+            transform: translate(0, -20px);
+
+
+        }
+
+        .container-section1 .btn1::before {
+            content: url("./images/icons/broderie24px.png");
+            float: left;
+            margin-right: 10px;
+
+        }
+
+        .container-section1 .btn2::before {
+            content: url("./images/icons/programme-de-formation.png");
+            float: left;
+            margin-right: 10px;
+
+        }
+
+        .container-section1 .hover:hover {
+            opacity: 0.8;
+
+        }
+
+        .container-section1 .btn1 {
+            margin-right: 10px;
+            background-color: white;
+            border-color: white;
+        }
+
+        .container-section1 .btn2 {
+            background-color: rgb(91, 21, 60);
+            color: white;
+            border-color: rgb(91, 21, 60);
+        }
+
+        /*-------------------------------------- section 2 ----------------------------------------------------*/
+        .parent-section2 {
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+            padding: 10px 0%;
+        }
+
+        .container-section2 {
+            width: 81%;
+            margin: auto;
+            overflow: auto;
+            margin-top: 60px;
+
+
+        }
+
+        .item-section2 {
+            width: 30%;
+            float: left;
+            height: 235px;
+            padding: 25px 0px;
+            box-sizing: border-box;
+            position: relative;
+            border: 1px solid rgb(41, 20, 84);
+            border-radius: 3px;
+            overflow: auto;
+            text-transform: capitalize;
+
+        }
+
+        .container-section2 .midle {
+            margin: 0px 5%;
+
+        }
+
+
+
+        .item-section2 .content {
+            position: absolute;
+            z-index: 2;
+
+        }
+
+        .overlay-section2 {
+
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background-color: rgb(0, 255, 255, 0);
+
+
+        }
+
+        .item-section2:hover .overlay-section2 {
+            background-color: rgb(91, 21, 60);
+            width: 100%;
+            height: 100%;
+            transition: 0.7s;
+        }
+
+        .item-section2:hover {
+            border: 1px solid rgb(255, 255, 255);
+            transition: 1s;
+
+        }
+
+        .item-section2:hover .item2-title {
+            color: white;
+            transition: 0.7s;
+        }
+
+
+        .item-section2::before {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            top: 0;
+            left: 0;
+            background-color: rgb(0, 255, 255, 0);
+        }
+
+        .item-section2:hover::before {
+            width: 10%;
+            height: 10%;
+            transition: 0.5s;
+
+        }
+
+        .item-section2:hover .icon {
+            color: white;
+            transition: 0.7s;
+        }
+
+
+
+        .item-section2 .icon {
+            color: rgb(75, 75, 251);
+            font-size: 25px;
+        }
+
+        .item2-title {
+            font-size: 25px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(41, 20, 84);
+        }
+
+        .item2-detail {
+            color: rgba(171, 171, 171, 0.797);
+            font-size: 16px;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .link {
+            text-decoration: none;
+            font-size: 16px;
+            color: rgb(57, 130, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 100;
+        }
+
+        /*-------------------------------------- section 3----------------------------------------------------*/
+        .parent-section3 {
+            width: 100%;
+            height: max-content;
+            padding-bottom: 30px;
+
+        }
+
+        .parent-section3 .section-title {
+            text-align: center;
+        }
+
+        .parent-section3 .section-line {
+            margin-bottom: 80px;
+        }
+
+        .parent-section3 .container {
+            overflow: auto;
+            width: 90%;
+            margin: auto;
+
+        }
+
+        .item-section3 {
+            height: 400px;
+            width: 28%;
+            float: left;
+            position: relative;
+        }
+
+        .parent-section3 .midle {
+            margin: 0 8%;
+        }
+
+        .parent-section3 .line2 {
+            margin-top: 5%;
+        }
+
+        .parent-section3 .img-container {
+            width: 85%;
+            height: 85%;
+            background-image: url("./images/crochet website/hand-made-cordon-yarn-crochet.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 50%;
+            margin: 7.5%;
+
+
+
+        }
+
+        .overley-section3 {
+            visibility: hidden;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            position: absolute;
+            background-color: rgba(91, 21, 60, 0.8);
+            border-radius: 50px;
+
+            z-index: 1;
+            transition: 1s;
+
+            opacity: 0;
+        }
+
+        .item-section3:hover .overley-section3 {
+            visibility: visible;
+            opacity: 0.7;
+        }
+
+        .item-section3:hover .content li {
+            visibility: visible;
+            opacity: 1;
+            margin-top: 0px;
+            transition: 1s;
+
+        }
+
+
+
+        .item-section3 .content {
+            padding: 0;
+            text-align: center;
+            z-index: 2;
+            position: absolute;
+            width: max-content;
+            height: 120px;
+            top: 50%;
+            bottom: 50%;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%, -50%);
+            list-style-type: none;
+            line-height: 30px;
+            text-align: center;
+
+        }
+
+        .item-section3 .content .title {
+            color: rgb(255, 135, 201);
+            font-size: 20px;
+        }
+
+        .item-section3 .content .details {
+
+            font-weight: bold;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .item-section3 .content .icons {
+            font-size: 20px;
+
+
+
+        }
+
+        .item-section3 .content li {
+            margin-top: 10px;
+            visibility: hidden;
+            opacity: 0;
+            text-transform: capitalize;
+            font-size: 16px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .item-section3 .content .icons a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            color: white;
+            line-height: 30px;
+            padding: 5px;
+            text-decoration: none;
+            border-radius: 3px;
+            background-color: rgb(139, 147, 252);
+
+        }
+
+        .item-section3 .img-container1 {
+            background-image: url("./images/crochet website/nosa.jpg");
+        }
+
+        .item-section3 .img-container2 {
+            background-image: url("./images/crochet website/tableclothe.jpg");
+        }
+
+        .item-section3 .img-container3 {
+            background-image: url("./images/crochet website/002d92a70f017bff17ead6f58cc2aa8c.jpg");
+
+        }
+
+        .item-section3 .img-container4 {
+            background-image: url("./images/crochet website/89555104c62649412e65768c2eb17b4a.jpg");
+
+        }
+
+        .item-section3 .img-container5 {
+            background-image: url("./images/crochet website/d4925d9446c875364f021962ae06ef89.jpg");
+
+        }
+
+        .item-section3 .img-container6 {
+            background-image: url("./images/crochet website/kit.jpg");
+
+        }
+
+        /*-------------------------------------- section 4----------------------------------------------------*/
+
+
+        .item-section4 {
+            text-align: left;
+            height: 190px;
+
+        }
+
+        .parent-section4 .line1 {
+            margin-bottom: 20px;
+        }
+
+        .item-section4 .icon {
+            float: left;
+            margin: 20px 0% 0% 20px;
+        }
+
+        .item-section4 ul {
+            list-style-type: none;
+            margin-top: auto;
+            margin: 20px 10% 0% 35px;
+
+
+        }
+
+        .item4-title {
+            margin-bottom: 20px;
+        }
+
+
+
+        /*-------------------------------------- section 5----------------------------------------------------*/
+        .parent-section5 {
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(91, 21, 60, 0.229);
+
+            overflow: auto;
+        }
+
+        .parent-section5 .container {
+            width: 100%;
+            padding-top: 50px;
+
+        }
+
+        .detail-section5 {
+            float: left;
+            width: 50%;
+
+        }
+
+        .parent-section5 .section-title {
+            margin-top: 0;
+        }
+
+        .parent-section5 .section-line {
+            margin: 0 0 40px;
+            line-height: 10px;
+        }
+
+        .detail-section5 .details {
+            margin-bottom: 30px;
+            color: rgba(41, 20, 84, 0.703);
+        }
+
+        .detail-section5 .icon {
+            color: rgb(91, 21, 60);
+            margin-right: 5px;
+        }
+
+        .detail-section5 .spetial {
+            color: rgba(41, 20, 84, 0.703);
+
+        }
+
+        .img-section5 {
+            float: left;
+            width: 40%;
+            height: 500px;
+        }
+
+        .parent-section5 .container {
+            width: 85%;
+            margin: auto;
+            margin-top: 60px;
+        }
+
+        .img-section5 .img-container {
+            background-image: url("./images/crochet website/hand-made-cordon-yarn-crochet.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 90%;
+            height: 90%;
+            margin: auto;
+
+        }
+
+        .img-section5 .dot {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: rgb(248, 248, 255);
+            display: inline-block;
+        }
+
+        .img-section5 .dots {
+            margin-top: 10px;
+            margin-left: 300px;
+        }
+
+        .img-section5 .dot:hover {
+            background-color: rgb(70, 70, 128);
+        }
+
+        .img-section5 .dots .autoselect {
+            background-color: rgb(70, 70, 128);
+
+        }
+
+        .img-section5 .dots .midle {
+            margin: 0px 10px;
+        }
+
+        .detail-section5 {
+            list-style-type: none;
+        }
+
+        .detail-section5 li {
+            margin-bottom: 10px;
+            text-transform: capitalize;
+            font-family: cursive;
+
+        }
+
+        /*-------------------------------------- section 6 ----------------------------------------------------*/
+
+        .parent-section6 {
+            width: 100%;
+            height: 400px;
+            background-image: url("./images/crochet website/gros-plan-mains-tricoter-table-bois.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            position: relative;
+        }
+
+        .overley-section6 {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .parent-section6 .container {
+
+            width: max-content;
+            height: max-content;
+            padding: 10px;
+            position: absolute;
+            top: 50%;
+            bottom: 50%;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%, -50%);
+
+
+        }
+
+        .item-section6 {
+            float: left;
+            line-height: 30px;
+            list-style-type: none;
+            text-align: center;
+            padding: 10px;
+            transition: 0.2s;
+
+        }
+
+        .parent-section6 .midle {
+            margin-right: 190px;
+        }
+
+        .item-section6 li {
+            color: white;
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .item-section6:hover {
+            outline: 3px solid white;
+            border-radius: 5px;
+            padding: 25px;
+
+        }
+
+        .item-section6 .icon {
+            color: rgb(36, 149, 255);
+            margin-bottom: 16px;
+            font-size: 35px;
+        }
+
+        .item-section6 .sub {
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        /*-------------------------------------- section 7----------------------------------------------------*/
+        .parent-section7 {
+            padding: 10px 0px;
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+
+        }
+
+        .section-title {
+            font-size: 35px;
+            margin: 120px 0px 8px;
+            letter-spacing: 2px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .section7-title:focus {
+            background-color: aqua;
+        }
+
+        .section-line {
+            width: 50px;
+            height: 4px;
+            background-color: rgb(91, 21, 60);
+            margin: auto;
+            border: 1px solid rgb(91, 21, 60);
+            border-radius: 3px;
+        }
+
+        .section7-container {
+            overflow: auto;
+            width: 70%;
+            margin: auto;
+            margin-top: 60px;
+        }
+
+        .section7-container .item {
+            float: left;
+            width: 30%;
+            padding: 20px 2px;
+            background-color: rgba(91, 21, 60, 0.862);
+            box-sizing: border-box;
+            color: white;
+            border-radius: 5px;
+            position: relative;
+            transition: 0.4s;
+
+        }
+
+        .section7-container .item::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 0%;
+            top: 0;
+            left: 0;
+            background-color: rgba(249, 249, 249, 0);
+            transition: 0.5s;
+
+
+        }
+
+        .section7-container .item:hover {
+            padding: 30px 0;
+        }
+
+        .section7-container .item:hover::before {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(249, 249, 249, 0.16);
+        }
+
+
+
+        .section7-container .item:hover .price {
+            color: #eb5a5a;
+        }
+
+        .section7-container .item:hover .grey1 {
+            color: #eb5a5a;
+        }
+
+
+
+        .section7-container .epic {
+            margin: 0px 5%;
+        }
+
+
+        .section7-container .price {
+            display: inline-block;
+            margin: 0px auto;
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 3px solid rgba(255, 166, 215, 0.782);
+            border-radius: 50%;
+            padding: 20px;
+            display: inline-block;
+            color: white;
+            transition: 0.8s;
+        }
+
+        .section7-container .item span {
+            font-size: 13px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .section7-container .item .grey1,
+        .grey2 {
+            color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            transition: 0.8s;
+        }
+
+        .section7-container .item .grey1 {
+            background-color: white;
+            color: rgb(91, 21, 60);
+            font-weight: bold;
+            width: 50%;
+            margin: 20px auto;
+            padding: 6px;
+            border: 2px dotted white;
+            border-radius: 6px;
+        }
+
+        .section7-container .item button {
+            border: 2px solid rgb(91, 21, 60);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-family: cursive;
+            background-color: white;
+        }
+
+        .section7-container .item button:hover {
+            cursor: pointer;
+        }
+
+        /*-------------------------------------- section 8 ---------------------------*/
+        .parent-section8 {
+            background-image: url("./images/crochet-wool-yarn-needles.jpg");
+
+        }
+
+        .parent-section8 .container {
+            /*done in section6*/
+        }
+
+        .item-section8 {
+            float: left;
+            list-style-type: none;
+            line-height: 20px;
+            width: 400px;
+
+            /* overflow: auto; */
+        }
+
+        .parent-section8 .midle {
+            margin-right: 90px;
+        }
+
+        .item-section8 .img-container {
+            width: 80px;
+            height: 80px;
+            float: left;
+            margin-right: 20px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 10%;
+            border-radius: 50%;
+
+        }
+
+        .item-section8 .img1 {
+            background-image: url("./images/crochet website/learder1.jpg");
+
+        }
+
+        .item-section8 .img2 {
+            background-image: url("./images/crochet website/leader2.jpg");
+
+        }
+
+        .item-section8 .titles {
+            line-height: 26px;
+            padding: 20px 0px;
+            display: inline-block;
+
+        }
+
+        .item-section8 .titles .title1 {
+            font-size: 20px;
+            color: white;
+            background-color: rgba(198, 24, 120, 0.793);
+            border-radius: 10px;
+            padding: 0 8px;
+
+        }
+
+        .item-section8 .titles .title2 {
+            color: rgb(204, 47, 133);
+            font-size: 18px;
+            background-color: rgba(255, 255, 255, 0.98);
+            border-radius: 10px;
+            padding: 0 8px;
+
+
+        }
+
+        .item-section8 .details {
+            text-transform: uppercase;
+            word-spacing: 5px;
+            clear: both;
+            color: white;
+            font-size: 16px;
+            margin-top: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        /*-------------------------------------- section 9 ---------------------------*/
+
+        .parent-sectionteam {
+
+            width: 100%;
+            height: 100vh;
+
+        }
+
+        .parent-sectionteam .section-title {
+            text-align: center;
+            margin-top: 120px;
+        }
+
+        .parent-sectionteam .container {
+            height: max-content;
+        }
+
+        .team-item {
+            float: left;
+            background-color: rgba(91, 21, 60, 0.921);
+
+            width: 30%;
+            height: max-content;
+            padding: 14px 18px;
+            text-align: center;
+            position: relative;
+            padding: 20px 0px;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+
+        .ww {
+            margin: 0px 5%;
+
+        }
+
+        .team-img {
+            width: 90%;
+            height: 200px;
+            margin: auto;
+            position: relative;
+            background-size: cover;
+            background-position: 50%;
+
+        }
+
+        .team-img1 {
+            background-image: url("images/crochet website/team2.jpg");
+            background-position: 50% 15%;
+
+        }
+
+        .team-img2 {
+            background-image: url("images/crochet website/team1.jpg");
+            background-position: 50% 5%;
+
+        }
+
+        .team-img3 {
+            background-image: url("images/crochet website/team3.jpg");
+            background-position: 50% 30%;
+
+
+        }
+
+        /* .team-img img {
+                       width: 100px;
+                       height: 100px;
+                background-color: #809540;
+                       background-size: cover;
+                      } */
+
+        .team-info-sp1,
+        .team-info-title {
+            color: white;
+        }
+
+        .team-info-sp1 {
+            display: inline-block;
+            width: 95%;
+        }
+
+        .team-overley {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.5s;
+
+
+        }
+
+        .team-item::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 0%;
+            top: 0;
+            left: 0;
+            background-color: rgba(91, 21, 60);
+            opacity: 0;
+            transition: 1s;
+        }
+
+        .team-item:hover::after {
+            width: 100%;
+            height: 100%;
+            opacity: 0.2;
+        }
+
+        .team-item::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 0%;
+            bottom: 0;
+            left: 0;
+            background-color: rgb(246, 246, 246);
+            opacity: 0;
+            transition: 1s;
+        }
+
+        .team-item:hover::before {
+            width: 100%;
+            height: 100%;
+            opacity: 0.2;
+        }
+
+        .team-item:hover .team-overley {
+            opacity: 0.7;
+            visibility: visible;
+        }
+
+        .team-overley a {
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-color: rgb(53, 171, 240);
+            color: #fff;
+            font-size: 23px;
+            margin-left: auto;
+        }
+
+        .team-overley a i {
+            line-height: 40px;
+        }
+
+        /*-------------------------------------- section 10 ---------------------------*/
+        .parent-section10 {
+            width: 100%;
+            height: 100vh;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+
+        .parent-section10 .section-title {
+            text-align: center;
+        }
+
+        .parent-section10 .container {
+            width: 90%;
+            overflow: auto;
+            margin: auto;
+            margin-top: 60px;
+
+        }
+
+        .item-section10 {
+            width: 30%;
+            float: left;
+            position: relative;
+            padding: 10px 0px;
+            text-align: center;
+            background-color: rgba(91, 21, 60, 0.764);
+            border-radius: 22px;
+            outline: 1px solid #aa7676;
+            ;
+        }
+
+        .parent-section10 .midle {
+            margin: 0px 5%;
+        }
+
+        .item-section10 .img-container {
+            width: 200px;
+            height: 200px;
+            background-size: cover;
+            margin: 5px 10px;
+            margin: auto;
+            background-position: 50%;
+        }
+
+        .notes {
+            padding: 0;
+            margin-left: 10px;
+            color: white;
+        }
+
+        .notes .midle {
+            margin: 0 10px;
+        }
+
+        .notes li {
+            display: inline-block;
+        }
+
+        .item-section10 .details,
+        .link,
+        .title {
+            margin-left: 10px;
+        }
+
+        .item-section10 .link {
+            color: white;
+            border: 2px solid #ffffff;
+            padding: 5px;
+            font-weight: bold;
+
+
+        }
+
+        .item-section10 .details {
+            margin-right: 20px;
+        }
+
+        .item-section10::after {
+            position: absolute;
+            width: 100%;
+            height: 0%;
+            content: "";
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.458);
+            opacity: 0;
+            transition: 0.9s;
+        }
+
+        .item-section10:hover::after {
+            width: 100%;
+            height: 100%;
+            opacity: 0.3;
+        }
+
+        .item-section10 .img1 {
+            background-image: url('./images/crochet website/tableclothe2.jpg');
+            background-position: 50% 60%;
+        }
+
+        .item-section10 .img2 {
+            background-image: url('./images/crochet website/meigurumi2.jpg');
+        }
+
+        .item-section10 .img3 {
+            background-image: url('./images/crochet website/pins.jpg');
+        }
+
+        /*-------------------------------------- section 11 ---------------------------*/
+        .footer {
+            width: 100%;
+            height: 330px;
+            background-color: rgba(91, 21, 60, 0.764);
+            position: relative;
+        }
+
+        .footer .container {
+            width: 50%;
+            text-align: center;
+
+            margin: auto;
+            padding-top: 60px;
+        }
+
+        .footer .img-container {
+            background-image: url('./images/crochet website/assortiment-vue-dessus-outils-tricot.jpg');
+            width: 200px;
+            height: 130px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            background-position: 50% 20%;
+        }
+
+        .footer-icons {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .footer-icons .icon {
+            display: inline-block;
+            font-size: 22px;
+            color: rgb(255, 255, 255);
+            margin: 0px 1px;
+        }
+
+        .footer .copyright {
+            color: rgb(255, 255, 255);
+            font-size: 13px;
+
+        }
+
+        .footer-icons .icon a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            background-color: rgb(105, 105, 251);
+            border-radius: 50%;
+        }
+
+        .footer-icons .icon a::after {}
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img class="logo-Img" src="./images/icons/broderie (2).png">
+            <span class="logo-name">HandyJoy</span>
+        </div>
+        <ul class="nav">
+            <li> <a href="#">Home</a> </li>
+            <li> <a href="#">About</a> </li>
+            <li> <a href="#">Portfolio</a> </li>
+            <li> <a href="#">Services</a> </li>
+            <li> <a href="#">Prices</a> </li>
+            <li> <a href="#">Team</a> </li>
+            <li> <a href="#">Blog</a> </li>
+            <li> <a href="#">Contact</a> </li>
+        </ul>
+    </div>
+    <!-- ******************************************* section 1 ******************************************* -->
+
+    <div class="parent-section1">
+        <div class="overley-section1">
+            <div class="container-section1">
+                <p><span class="title">We sew your happiness</span> <br> <span class="phar">store of hand made
+                        joy, materials, gifts, learning courses, and more to surprise you!</span></p>
+                <button class="btn1 hover"> perchase</button>
+                <button class="btn2 hover"> courses</button>
+            </div>
+        </div>
+    </div>
+
+    <!--*******************************************  section2 ******************************************* -->
+
+    <div class="parent-section2">
+        <h2 class="section-title ">Welcome To Website</h2>
+        <div class="section-line"></div>
+        <div class="container-section2">
+
+            <div class="item-section2">
+                <div class="content">
+                    <i class="fas fa-gifts icon"></i>
+                    <p class="item2-title">under order gifts</p>
+                    <p class="item2-detail">choose the pattern, colors, model.. we make the gift for you!</p>
+                    <a href="#" class="link">Read More</a>
+                </div> <!-- content -->
+                <div class="overlay-section2"></div><!-- overlay section2 -->
+            </div> <!-- item-section2 -->
+
+            <div class="item-section2 midle ">
+                <div class="content">
+                    <i class="fas fa-magic icon"></i>
+                    <p class="item2-title">High quality kits</p>
+                    <p class="item2-detail">Material of hight quality for embrodery purpose, crochet and others!</p>
+                    <a href="#" class="link">Read More</a>
+                </div> <!-- content -->
+                <div class="overlay-section2">
+                </div><!-- overlay section2 -->
+            </div> <!-- item-section2 -->
+
+
+            <div class="item-section2">
+                <div class="content">
+                    <i class="fas fa-sort-amount-up-alt icon"></i>
+                    <p class="item2-title">courses</p>
+                    <p class="item2-detail">learn to do the stuff by yourself In person(our center) or online</p>
+                    <a href="#" class="link">Read More</a>
+                </div> <!-- content -->
+                <div class="overlay-section2">
+                </div> <!-- overlay section2 -->
+            </div><!-- item-section2 -->
+
+        </div> <!-- container-section2 -->
+    </div><!-- parent-section2 -->
+
+    <!-- ******************************************* sction3 *******************************************  -->
+    <div class="parent-section3">
+        <h2 class="section-title ">featured works</h2>
+        <div class="section-line"></div>
+        <div class="container">
+
+            <div class="item-section3">
+                <div class="img-container img-container1">
+                </div>
+                <div class="overley-section3 ">
+                </div> <!-- overley-section3 -->
+                <ul class="content">
+                    <li class="title">Category</li>
+                    <li class="details">embroidered hoops,pins,clothes</li>
+                    <li class="icons"><a href="#"><i class="fas fa-edit"></i></a> <a href="#"><i
+                                class="fas fa-search"></i></a></li>
+                </ul>
+            </div> <!-- item-section3 -->
+
+
+            <div class="item-section3 midle ">
+                <div class="img-container img-container2">
+                </div>
+                <div class="overley-section3 ">
+                </div> <!-- overley-section3 -->
+                <ul class="content">
+                    <li class="title">Category</li>
+                    <li class="details">crochetted clothes,tables cloths,accessories</li>
+                    <li class="icons"><a href="#"><i class="fas fa-edit"></i></a> <a href="#"><i
+                                class="fas fa-search"></i></a></li>
+                </ul>
+            </div> <!-- item-section3 -->
+
+            <div class="item-section3 ">
+                <div class="img-container img-container3">
+                </div>
+                <div class="overley-section3 ">
+                </div> <!-- overley-section3 -->
+                <ul class="content">
+                    <li class="title">Category</li>
+                    <li class="details">kinitted sweater,upper-wears,..</li>
+                    <li class="icons"><a href="#"><i class="fas fa-edit"></i></a> <a href="#"><i
+                                class="fas fa-search"></i></a></li>
+                </ul>
+            </div> <!-- item-section3 -->
+
+            <div class="item-section3 line2 ">
+                <div class="img-container img-container4">
+                </div>
+                <div class="overley-section3 ">
+                </div> <!-- overley-section3 -->
+                <ul class="content">
+                    <li class="title">Category</li>
+                    <li class="details">embroidery materials</li>
+                    <li class="icons"><a href="#"><i class="fas fa-edit"></i></a> <a href="#"><i
+                                class="fas fa-search"></i></a></li>
+                </ul>
+            </div> <!-- item-section3 -->
+
+            <div class="item-section3 line2 midle ">
+                <div class="img-container img-container5">
+                </div>
+                <div class="overley-section3 ">
+                </div> <!-- overley-section3 -->
+                <ul class="content">
+                    <li class="title">Category</li>
+                    <li class="details">maeigurumi dolls</li>
+                    <li class="icons"><a href="#"><i class="fas fa-edit"></i></a> <a href="#"><i
+                                class="fas fa-search"></i></a></li>
+                </ul>
+            </div> <!-- item-section3 -->
+
+            <div class="item-section3 line2">
+                <div class="img-container img-container6">
+                </div>
+                <div class="overley-section3 ">
+                </div> <!-- overley-section3 -->
+                <ul class="content">
+                    <li class="title">Category</li>
+                    <li class="details">Knitting materials</li>
+                    <li class="icons"><a href="#"><i class="fas fa-edit"></i></a> <a href="#"><i
+                                class="fas fa-search"></i></a></li>
+                </ul>
+            </div> <!-- item-section3 -->
+
+
+        </div> <!-- container -->
+    </div>
+    <!-- ******************************************* sction4 *******************************************  -->
+    <div class="parent-section4 parent-section2">
+        <h2 class="section-title ">More To Know & Love</h2>
+        <div class="section-line"></div>
+        <div class="container-section4 container-section2">
+
+            <div class="item-section4 item-section2 line1">
+                <div class="content">
+                    <i class="fas fa-gifts icon"></i>
+
+                    <ul>
+                        <li class="item4-title item2-title">Under Order Gifts</li>
+                        <li class="item4-detail item2-detail">Choose The Pattern, Colors, Model.. We Make The Gift For
+                            You!</li>
+                    </ul>
+
+                </div> <!-- content -->
+                <div class="overlay-section4 overlay-section2"></div><!-- overlay section4 -->
+            </div> <!-- item-section4    1 -->
+
+            <div class="item-section4 item-section2 midle line1 ">
+                <div class="content">
+                    <i class="fas fa-magic icon"></i>
+
+                    <ul>
+                        <li class="item4-title item2-title">High Quality Kits</li>
+                        <li class="item4-detail item2-detail">Material Of Hight Quality For Embrodery Purpose, Crochet
+                            And Others!</li>
+                    </ul>
+                </div> <!-- content -->
+                <div class="overlay-section4 overlay-section2">
+                </div><!-- overlay section4 -->
+            </div> <!-- item-section4    2-->
+
+
+            <div class="item-section4 item-section2 line1">
+                <div class="content">
+
+                    <i class="fas fa-sort-amount-up-alt icon"></i>
+                    <ul>
+                        <li class="item4-title item2-title">Courses</li>
+                        <li class="item4-detail item2-detail">Learn To Do The Stuff By Yourself In Person(Our Center) Or
+                            Online</li>
+                    </ul>
+                </div> <!-- content -->
+                <div class="overlay-section4 overlay-section2">
+                </div> <!-- overlay section2 -->
+            </div><!-- item-section4    3-->
+
+
+            <div class="item-section4 item-section2">
+                <div class="content">
+                    <i class="fas fa-laugh-wink icon"></i>
+                    <ul>
+                        <li class="item4-title item2-title">Inbox kits</li>
+                        <li class="item4-detail item2-detail">have the chance to win full kits monthly</li>
+                    </ul>
+                </div> <!-- content -->
+                <div class="overlay-section4 overlay-section2">
+                </div> <!-- overlay section2 -->
+            </div><!-- item-section4    4 -->
+
+            <div class="item-section4 item-section2 midle">
+                <div class="content">
+                    <i class="fas fa-users icon"></i>
+                    <ul>
+                        <li class="item4-title item2-title">have comunity</li>
+                        <li class="item4-detail item2-detail">make new frindships with learners of common intrest </li>
+                    </ul>
+                </div> <!-- content -->
+                <div class="overlay-section4 overlay-section2">
+                </div> <!-- overlay section2 -->
+            </div><!-- item-section4   5 -->
+
+            <div class="item-section4 item-section2">
+                <div class="content">
+                    <i class="fas fa-fire-alt icon"></i>
+                    <ul>
+                        <li class="item4-title item2-title">learning camps</li>
+                        <li class="item4-detail item2-detail">join the camp and explore the skills of golden peaple</li>
+                    </ul>
+                </div> <!-- content -->
+                <div class="overlay-section4 overlay-section2">
+                </div> <!-- overlay section2 -->
+            </div><!-- item-section4   6 -->
+
+        </div> <!-- container-section2 -->
+    </div><!-- parent-section2 -->
+
+    <!-- ******************************************* sction 5 *******************************************  -->
+
+    <div class="parent-section5">
+        <div class="container">
+            <ul class="detail-section5">
+                <li class="section-title">Why Choose Us</li>
+                <li class="section-line"></li>
+                <li class="details">our team compose of most skilfull people, wether you're buying the material or
+                    learning how to make it, you would notice the perfection in the work</li>
+                <li class="spetial"> <i class="fas fa-check-circle icon"></i>beautiful hand embroidered hoops and cute
+                    things
+                </li>
+                <li class="spetial"><i class="fas fa-check-circle icon"></i>hand crochtted sweaters and skirts of all
+                    sizes
+                </li>
+                <li class="spetial"><i class="fas fa-check-circle icon"></i>complete Kit assortment for beginers to
+                    start
+                </li>
+                <li class="spetial"><i class="fas fa-check-circle icon"></i>preson and online courses by best teachers
+                </li>
+            </ul>
+
+            <div class="img-section5">
+                <div class="img-container"></div>
+                <div class="dots">
+                    <div class="dot autoselect"></div>
+                    <div class="dot midle"></div>
+                    <div class="dot"></div>
+                </div>
+            </div> <!-- img-section5 -->
+        </div> <!-- container -->
+    </div> <!-- detail-section5 -->
+
+
+
+
+    <!-- ******************************************* sction7 *******************************************  -->
+
+    <div class="parent-section7">
+        <h2 class="section-title">Kits Pricing Table</h1>
+            <div class="section-line"></div>
+            <div class="section7-container">
+                <div class="item basic">
+                    <p class="grey1">Crochet Kit</p>
+                    <p class="price">$12<br><span>/3 Boxes</span></p>
+                    <p class="grey2">7 hooks <br> 6 multi-colors yarns <br> 5 pattern sheets </p>
+                    <br>
+                    <button>purchase now</button>
+                </div>
+
+                <div class="item epic">
+                    <p class="grey1">Embroidery Kit</p>
+                    <p class="price">$25 <br><span>/3 Boxes</span></p>
+                    <p class="grey2">4 hoops<br> 25 multi-colors threads <br> 2 meters cotton cloth </p>
+                    <br>
+                    <button>purchase now</button>
+                </div>
+                <div class="item golden">
+                    <p class="grey1">Golden kit</p>
+                    <p class="price">$30<br> <span>/3 Dolls</span></p>
+                    <p class="grey2"> 4 hoops & 7 hooks<br>25 threads & 6yarn <br> 5patterns 1meter cloth </p>
+                    <br>
+                    <button>purchase now</button>
+                </div>
+            </div>
+    </div>
+
+    <!-- ******************************************* sction8 *******************************************  -->
+    <div class="parent-section8 parent-section6">
+        <div class="overlay-section8 overley-section6 ">
+            <div class="container">
+
+                <ul class="item-section8 midle">
+                    <li class="img-container img1"></li>
+                    <li class="titles"><span class="title1">Manel Boukhalfa</span><br> <span class="title2">Multycraft
+                            maker</span></li>
+                    <li class="details">CEO of the project, founder, leader, crafts maker and a teacher in the website.
+                    </li>
+                </ul> <!-- item-section8 -->
+
+                <ul class="item-section8">
+                    <li class="img-container img2"></li>
+                    <li class="titles"><span class="title1">Lyly MacCrew</span><br> <span class="title2">Pattern
+                            designer</span></li>
+                    <li class="details">courses organiser, spetialised in designing new creative patterns and teaching
+                        them.</li>
+                </ul> <!-- item-section8 -->
+
+            </div> <!-- container -->
+        </div> <!-- overlay-section8 -->
+    </div> <!-- parent-section8 -->
+    </div>
+    <!-- ******************************************* sction9 *******************************************  -->
+    <div class="parent-sectionteam">
+
+        <h2 class="section-title">New members</h1>
+            <div class="section-line"></div>
+            <div class="container section7-container">
+                <div class="team-item ">
+                    <div class="team-img team-img1">
+                        <div class="team-overley">
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div> <!-- /team-overley -->
+                    </div> <!-- /team-img -->
+
+                    <div class="team-info">
+                        <h2 class="team-info-title">nadia abo-breaka</h2>
+                        <span class="team-info-sp1">retiered doctor who loves hand works, I trained a lot on gifts to my
+                            family and now it became a source of moent too</span>
+                    </div> <!-- /team-info -->
+
+                </div> <!-- /team-item -->
+
+
+
+
+                <div class="team-item ww">
+
+                    <div class="team-img team-img2">
+
+                        <div class="team-overley">
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div> <!-- /team-overley -->
+                    </div> <!-- /team-img -->
+
+                    <div class="team-info">
+                        <h2 class="team-info-title">Alaa bilo</h2>
+                        <span class="team-info-sp1">IT engeneer loving handworks, I work remotly so i enjoy my free time
+                            making beautifull things; happy to join you</span>
+                    </div> <!-- /team-info -->
+                </div> <!-- /team-item -->
+
+                <div class="team-item">
+
+                    <div class="team-img team-img3">
+
+                        <div class="team-overley">
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div> <!-- /team-overley -->
+                    </div> <!-- /team-img -->
+
+                    <div class="team-info">
+                        <h2 class="team-info-title">Beth cover</h2>
+                        <span class="team-info-sp1">Tailor, and i have a long past doing this, you can count on me! I
+                            also give lessons here check them up!</span>
+                    </div> <!-- /team-info -->
+
+                </div> <!-- /team-item -->
+            </div> <!-- /container -->
+
+    </div> <!-- parent-sectionteam -->
+
+    <!-- ******************************************* sction6 *******************************************  -->
+
+    <div class="parent-section6">
+        <div class="overley-section6">
+            <div class="container">
+                <ul class="item-section6 midle">
+                    <li class="icon"><i class="fas fa-users"></i></li>
+                    <li class="sub">45k</li>
+                    <li class="genre">happy clients</li>
+                </ul> <!-- item-section6 -->
+
+                <ul class="item-section6 midle">
+                    <li class="icon"></i><i class="fas fa-trophy"></i></li>
+                    <li class="sub">10</li>
+                    <li class="genre">awards won</li>
+                </ul> <!-- item-section6 -->
+
+                <ul class="item-section6 midle">
+                    <li class="icon"><i class="fas fa-mug-hot"></i></li>
+                    <li class="sub">12k</li>
+                    <li class="genre">cups of coffee</li>
+                </ul> <!-- item-section6 -->
+
+                <ul class="item-section6">
+                    <li class="icon"><i class="far fa-file"></i></li>
+                    <li class="sub">20</li>
+                    <li class="genre">projects completed</li>
+                </ul> <!-- item-section6 -->
+            </div> <!-- container -->
+        </div> <!-- overlay-section6 -->
+    </div> <!-- parent-section6 -->
+
+    <!-- ******************************************* sction10 *******************************************  -->
+    <div class="parent-section10">
+        <h2 class="section-title">Recent works</h2>
+        <div class="section-line"></div>
+        <div class="container">
+
+            <div class="item-section10">
+                <div class="img-container img1"></div>
+                <ul class="notes">
+                    <li></i><i class="fas fa-user"></i> Lamia </li>
+                    <li class="midle"><i class="far fa-clock"></i> 13 dec </li>
+                    <li><i class="fas fa-comments"></i> 75</li>
+                </ul> <!-- notes -->
+                <h4 class="title"> Table-cloth flower shape </h4>
+                <p class="details"> Table-cloth flower shape, Diameter = 15cm, cotton perl thread.
+                </p>
+                <a href="#" class="link">Order Now</a>
+            </div> <!-- item-section10 -->
+
+            <div class="item-section10 midle">
+                <div class="img-container img2"></div>
+                <ul class="notes">
+                    <li></i><i class="fas fa-user"></i> Intissar </li>
+                    <li class="midle"><i class="far fa-clock "></i> 13 dec </li>
+                    <li><i class="fas fa-comments"></i> 75</li>
+                </ul> <!-- notes -->
+                <h4 class="title"> Pinguin Meigurumi doll </h4>
+                <p class="details"> Meigurumi pinguin doll, crochtted with cotton and puffed.
+                </p>
+                <a href="#" class="link">Order Now</a>
+            </div> <!-- item-section10 -->
+
+            <div class="item-section10 ">
+                <div class="img-container img3"></div>
+                <ul class="notes">
+                    <li></i><i class="fas fa-user"></i> Samia </li>
+                    <li class="midle"><i class="far fa-clock"></i> 13 dec </li>
+                    <li><i class="fas fa-comments"></i> 75</li>
+                </ul> <!-- notes -->
+                <h4 class="title"> Hand embroidered rose neckles </h4>
+                <p class="details">
+                    Made these lovely blooms, embroidered neckles , flowors
+                </p>
+                <a href="#" class="link">Order Now</a>
+            </div> <!-- item-section10 -->
+        </div> <!-- container -->
+    </div> <!-- parent-section10 -->
+    <!-- ******************************************* sction11 *******************************************  -->
+    <div class="footer">
+        <div class="container">
+            <div class="img-container"></div>
+            <ul class="footer-icons">
+                <li class="icon"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="icon"><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+                <li class="icon"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li class="icon"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li class="icon"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+            </ul>
+            <p class="copyright">COPYRIGHT © 2021 . ALL RIGHT RESERVED BY HandyJoy</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
